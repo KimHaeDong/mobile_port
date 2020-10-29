@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* #header {
+    height: 112px;
+    line-height: 70px;
+    
+} */
+
+#wrap {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+#header {
+    background: #fff; 
+    height: 100px;
+    padding: 20px;
+    margin: 5px;
+    position: relative;
+    border-radius: 20px;
+}
+
+/* #header {
+    height: 62px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background: #fff;
+} */
+
+#header .logo {
+    float: left;
+    margin-left: 10px;
+}
+
+
+#header .topIcon {
+    float: right;
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+#header .topIcon a {
+    padding: 10px;
+}
+
+#content .main_noti {
+    background-image: url(../images/mountaineer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+    border-radius: 30px;
+    margin: 80px 5px 5px 5px;
+}
+
+#content .step_area .btn1,
+#content .step_area .btn2,
+#content .step_area .btn3,
+#content .step_area .btn4 {
+    float: left;
+    background: rgba(153, 200, 228, 1);
+    width: 48%;
+    height: 150px;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+#footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#footer .cs {
+    padding: 5px;
+    font-size: 20px;
+}
+
+#footer .privacy {
+    display: flex;
+    justify-content: space-between;
+    background: #ddd;
+    border-radius: 3px;
+}
+
+#footer .privacy>a {
+    display: block;
+    width: 33.33%;
+    text-align: center;
+    padding: 5px;
+    color: #333;
+    font-size: 12px;
+}
+
+#footer .privacy>a:nth-child(2) {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+}
+
+#footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#footer .footer-bottom .sns a {
+    font-size: 25px;
+    padding: 0 5px;
+    margin: 0 3px;
+    line-height: 47px;
+}
+
+#footer .copyright {
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px;
+    background: #000;
+    text-align: center;
+    border-radius: 5px;
+}
