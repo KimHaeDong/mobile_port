@@ -11,7 +11,7 @@
         }
       );
 
-    $("body").on("click", "#step_area, .mountainContent .mediList a, .menuBox a", function (e) {
+    $("body").on("click", "#step_area .setArea a, .mountainContent .mountainiList a, .menuBox a", function (e) {
     e.preventDefault();
     var url = this.href;
     var part = $(this).attr('class')
@@ -25,8 +25,8 @@
         newContent += `<div>${usedata[part][i].about}</div></div></li>`;
       }
       $("#content .part1DoctorList").html(`<ul>${newContent}</ul>`);
+      });
     });
-  });
 
   $("#topIcon .menu").on("click", function () {
     $("#navWrap").addClass("on");
