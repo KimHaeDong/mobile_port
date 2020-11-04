@@ -37,15 +37,31 @@
 }
 
 
-#header .topIcon {
+#topIcon {
     float: right;
     font-size: 30px;
     margin-top: 12px;
 }
 
-#header .topIcon a {
+#topIcon a {
     padding: 10px;
 }
+
+#navWrap { position:fixed; top:0; left:0; bottom:0; right:0;  background:rgba(0,0,0,0); display:none }
+#navWrap.on { background:rgba(0,0,0,0.5); z-index:999999999; display:block; }
+#lnb { position:absolute; top:0; right:-274px; bottom:0; width:274px;  background:#fff;  }
+#lnb_close { position:absolute; top:0; left:-50px; font-size: 40px; color: #fff; }
+#lnb .inBtn {
+    margin: 10px 20px;
+}
+#lnb .inBtn a {
+    display: block;
+    background: blue;
+    color: #fff;
+    padding: 10px;
+}
+
+
 
 #content .main_noti {
     background-image: url(../images/mountaineer.png);
@@ -57,10 +73,11 @@
     margin: 80px 5px 5px 5px;
 }
 
-#content .step_area .btn1,
-#content .step_area .btn2,
-#content .step_area .btn3,
-#content .step_area .btn4 {
+
+#step_area .btn1,
+#step_area .btn2,
+#step_area .btn3,
+#step_area .btn4 {
     float: left;
     background: rgba(153, 200, 228, 1);
     width: 48%;
@@ -68,6 +85,7 @@
     border-radius: 20px;
     margin: 1%;
 }
+
 
 #footer {
     background: #333;
