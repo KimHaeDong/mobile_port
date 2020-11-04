@@ -15,12 +15,22 @@ ul, ol { list-style-type: none;}
 
 
 #header {
-    background: #fff; 
+    background: #fff;
     height: 100px;
-    /* padding: 20px; */
-    /* margin: 5px; */
-    position: relative;
-    /* border: 1px solid green; */
+    border: 1px solid green;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+#header.on {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 99999
 }
 
 
@@ -33,6 +43,10 @@ ul, ol { list-style-type: none;}
     transform: translateY(-50%);
 }
 
+#content {
+    min-height: 459px;
+    margin-top: 100px;
+}
 
 #topIcon {
     float: right;
@@ -49,13 +63,43 @@ ul, ol { list-style-type: none;}
 }
 
 
-#navWrap { position:fixed; top:0; left:0; bottom:0; right:0;  background:rgba(0,0,0,0); display:none }
-#navWrap.on { background:rgba(0,0,0,0.5); z-index:999999999; display:block; }
-#lnb { position:absolute; top:0; right:-274px; bottom:0; width:274px;  background:#fff;  }
-#lnb_close { position:absolute; top:0; left:-50px; font-size: 40px; color: #fff; }
+#navWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    display: none
+}
+
+#navWrap.on {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999999999;
+    display: block;
+}
+
+#lnb {
+    position: absolute;
+    top: 0;
+    right: -274px;
+    bottom: 0;
+    width: 274px;
+    background: #fff;
+}
+
+#lnb_close {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    font-size: 40px;
+    color: #fff;
+}
+
 #lnb .inBtn {
     margin: 10px 20px;
 }
+
 #lnb .inBtn a {
     display: block;
     background: blue;
@@ -64,7 +108,7 @@ ul, ol { list-style-type: none;}
 }
 
 #container {
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 #content .topImg {
@@ -75,6 +119,7 @@ ul, ol { list-style-type: none;}
     height: 300px;
     border-radius: 20px;
     margin: 1%;
+    border: 1px solid brown;
 }
 
 
@@ -97,7 +142,7 @@ ul, ol { list-style-type: none;}
     color: #fff;
     /* padding: 10px; */
     /* margin-top: 5px; */
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 #footer .cs {
