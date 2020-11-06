@@ -28,7 +28,7 @@
     },
   })
 
-  $("body").on("click", "#step_area .setArea a, .mountainContent .mountainiList a, .menuBox a", function (e) {
+  $("body").on("click", "#step_area .setArea a, .mountainContent .mountainList a, .menuBox a", function (e) {
   e.preventDefault();
   var url = this.href;
   var part = $(this).attr('class')

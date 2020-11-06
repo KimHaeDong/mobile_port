@@ -206,6 +206,7 @@ ul, ol { list-style-type: none;}
     border-radius: 5px;
 }
 
+
 .mountainContent ul { display:flex;  
     flex-wrap:wrap; /* 자식들의 자동줄바꿈 허용 */
     padding:10px 5px;
