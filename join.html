@@ -1,0 +1,44 @@
+<section id="container">
+    <div id="content" class="joinContent">
+        <div class="contTit">
+            <div class="prev">
+                <a href="index.php">
+                    <img src="images/img_prev.png" alt="이전페이지">
+                </a>
+            </div>
+            <h2>회원가입</h2>
+        </div>
+
+        <div id="join_box">
+            <form name="member_form" method="post" action="member_insert.php">
+                <fieldset>
+                    <legend>회원가입</legend>
+                    <p>
+                        <label for="idtext">아이디</label>
+                        <input type="text" name="id" id="idtext">
+                        <button type="button" onclick="id_check()">중복체크</button>
+                    </p>
+                    <p>
+                        <label for="pass">비밀번호</label>
+                        <input type="password" name="pass" id="pass">
+                    </p>
+                    <p>
+                        <label for="passok">비밀번호확인</label>
+                        <input type="password" name="passok" id="passok">
+                    </p>
+                    <p>
+                        <label for="name">이름</label>
+                        <input type="text" name="name" id="name">
+                    </p>
+                    <p>
+                        <label for="tel">전화번호</label>
+                        <input type="text" name="tel" id="tel">
+                    </p>
+                </fieldset>
+                <button type="button" onclick="join_check()">가입</button>
+                <button type="reset">취소</button>
+            </form>
+        </div>
+
+    </div>
+</section>

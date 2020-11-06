@@ -38,10 +38,10 @@
     for (var i in usedata[part]) {
       newContent += `<li><div class="img"><img src="${usedata[part][i].photo}" alt=""></div>`;
       newContent += `<div class="doctorInfo"><strong>${usedata[part][i].name}</strong>`;
-      newContent += `<p>${usedata[part][i].depart}</p>`;
-      newContent += `<div>${usedata[part][i].about}</div></div></li>`;
+      newContent += `<p>${usedata[part][i].place}</p>`;
+      newContent += `<div>${usedata[part][i].address}</div></div></li>`;
     }
-    $("#content .part1DoctorList").html(`<ul>${newContent}</ul>`);
+    $("#content .seoul").html(`<ul>${newContent}</ul>`);
     });
   });
 
@@ -67,3 +67,69 @@
   });
 
 })(jQuery);
+
+function join_check() {
+
+  if ( !document.member_form.id.value ) {
+    alert('아이디를 입력하세요!')
+    document.member_form.id.focus()
+    return false
+  }
+
+  if ( !document.member_form.pass.value ) {
+    alert('비밀번호를 입력하세요!')
+    document.member_form.pass.focus()
+    return false
+  }
+
+  if ( !document.member_form.passok.value ) {
+    alert('비밀번호 확인을 입력하세요!')
+    document.member_form.passok.focus()
+    return false
+  }
+
+  if ( !document.member_form.name.value ) {
+    alert('이름을 입력하세요!')
+    document.member_form.name.focus()
+    return false
+  }
+
+  if ( !document.member_form.tel.value ) {
+    alert('전화번호를 입력하세요!')
+    document.member_form.tel.focus()
+    return false
+  }
+
+  if (document.member_form.pass.value !== document.member_form.passok.value ) {
+    alert('비밀번호가 일치하지 않습니다.')
+    document.member_form.pass.focus()
+    return false
+  }
+
+  document.member_form.submit()
+
+}
+
+
+function login_check() {
+
+  if ( !document.login_form.id.value ) {
+    alert('아이디를 입력하세요!')
+    document.login_form.id.focus()
+    return false
+  }
+
+  if ( !document.login_form.pass.value ) {
+    alert('비밀번호를 입력하세요!')
+    document.login_form.pass.focus()
+    return false
+  }
+
+  document.login_form.submit()
+
+}
+
+function id_check() {
+  // window.open("url", "창제목", "옵션값")
+  window.open("id_check.php?id="+document.member_form.id.value, "", "width=350, height=200, left=300, top=300, scrollbars=no, resizable=yes")
+}

@@ -93,7 +93,7 @@ ul, ol { list-style-type: none;}
 
 #lnb_close {
     position: absolute;
-    top: 0;
+    top: 25px;
     left: -50px;
     font-size: 40px;
     color: #fff;
@@ -103,11 +103,23 @@ ul, ol { list-style-type: none;}
     margin: 10px 20px;
 }
 
+#lnb .menuBox a {
+    display: block;
+    background: #1e6b96;
+    color: #fff;
+    padding: 5px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
 #lnb .inBtn a {
     display: block;
     background: #1e6b96;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #container {
@@ -141,6 +153,8 @@ ul, ol { list-style-type: none;}
 }
 
 
+
+
 #footer {
     background: #333;
     color: #fff;
@@ -149,11 +163,6 @@ ul, ol { list-style-type: none;}
     border: 1px solid blue;
 }
 
-#footer .footer-bottom {
-    /* display: flex;
-    justify-content: space-between; */
-    /* margin: 10px 0; */
-}
 
 #footer .footer-bottom .sns a {
     font-size: 25px;
@@ -196,3 +205,34 @@ ul, ol { list-style-type: none;}
     text-align: center;
     border-radius: 5px;
 }
+
+.mountainContent ul { display:flex;  
+    flex-wrap:wrap; /* 자식들의 자동줄바꿈 허용 */
+    padding:10px 5px;
+    text-align: center; }
+.mountainContent ul li { background:#ddd; margin:5px; padding:10px;
+    border-radius:5px; flex:250px }    
+.mountainContent ul li a { display:block }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 회원가입폼페이지 */
+fieldset { border:none; padding:20px }
+legend { display:none }
+#join_box p { margin:15px }
+#join_box label { display:inline-block; width:100px; height:30px;
+     vertical-align:middle; line-height:30px;
+}
+#join_box input { width:200px; height:30px; line-height:30px;
+     vertical-align:middle }

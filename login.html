@@ -1,0 +1,30 @@
+<section id="container">
+    <div id="content" class="loginContent">
+        <div class="contTit">
+            <div class="prev">
+                <a href="index.php">
+                    <img src="images/img_prev.png" alt="이전페이지">
+                </a>
+            </div>
+            <h2>로그인</h2>
+        </div>
+
+        <div id="login_box">
+            <form name="login_form" method="post" action="login.php">
+                <fieldset>
+                    <legend>로그인</legend>
+                    <p>
+                        <label for="idtext">아이디</label>
+                        <input type="text" name="id" id="idtext">
+                    </p>
+                    <p>
+                        <label for="pass">비밀번호</label>
+                        <input type="password" name="pass" id="pass">
+                    </p>
+                </fieldset>
+                <button type="button" onclick="login_check()">로그인</button>
+            </form>
+        </div>
+
+    </div>
+</section>
