@@ -20,7 +20,7 @@ ul, ol { list-style-type: none;}
     margin: 0 auto;
     background: #fff;
     height: 100px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     position: fixed;
     /* position: absolute; */
     top: 0px;
@@ -73,7 +73,7 @@ ul, ol { list-style-type: none;}
     bottom: 0;
     right: 0;
     background: rgba(0, 0, 0, 0);
-    display: none
+    display: none;
 }
 
 #navWrap.on {
@@ -123,7 +123,7 @@ ul, ol { list-style-type: none;}
 }
 
 #container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 100px;
 }
 
@@ -135,7 +135,7 @@ ul, ol { list-style-type: none;}
     height: 300px;
     border-radius: 20px;
     margin: 1%;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
 }
 
 
@@ -160,7 +160,7 @@ ul, ol { list-style-type: none;}
     color: #fff;
     /* padding: 10px; */
     /* margin-top: 5px; */
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 
@@ -208,12 +208,13 @@ ul, ol { list-style-type: none;}
 
 
 .mountainContent ul { display:flex;  
-    flex-wrap:wrap; /* 자식들의 자동줄바꿈 허용 */
+    flex-wrap:wrap; /*자식들의 자동줄바꿈 허용*/
     padding:10px 5px;
     text-align: center; }
 .mountainContent ul li { background:#ddd; margin:5px; padding:10px;
-    border-radius:5px; flex:250px }    
+    border-radius:5px; flex:250px; }    
 .mountainContent ul li a { display:block }
+.mountainContent ul li img { width: 100%;}
 
 
 
