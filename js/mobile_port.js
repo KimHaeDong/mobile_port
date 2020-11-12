@@ -41,7 +41,7 @@
       newContent += `<p>${usedata[part][i].place}</p>`;
       newContent += `<div>${usedata[part][i].address}</div></div></li>`;
     }
-    $("#content .seoul").html(`<ul>${newContent}</ul>`);
+    $("#content .seoulList, #content .gyeonggiList, #content .gangwonList, #content .gyeongsangList, #content .JeollaList, #content .chungcheongList, #content .incheonList, #content .gwangjuList, #content .busanList, #content .ulsanList, #content .jejuList, #content .othersList").html(`<ul>${newContent}</ul>`);
     });
   });
 
