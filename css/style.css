@@ -150,7 +150,7 @@ ul, ol { list-style-type: none;}
 }
 
 #content .topImg {
-    background-image: url(images/mountaineer.png);
+    background-image: url(../images/mountaineer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -434,3 +434,16 @@ legend { display:none }
 }
 #join_box input { width:200px; height:30px; line-height:30px;
      vertical-align:middle }
+
+
+/* 모바일화면 */
+#onlyMobile {
+    position:fixed; width:100vw; height:100vh; z-index:9999999999;
+    background:#4ab8bc; top:0; font-size:30px; display:flex;
+    justify-content: center; align-items:center;
+}
+@media screen and (max-width:768px ) {
+    #onlyMobile {
+     display:none;
+    }   
+}
