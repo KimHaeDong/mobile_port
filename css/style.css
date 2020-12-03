@@ -150,7 +150,7 @@ ul, ol { list-style-type: none;}
 }
 
 #content .topImg {
-    background-image: url(/images/mountaineer.png);
+    background-image: url(images/mountaineer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
