@@ -37,7 +37,7 @@
     var newContent = "";
     for (var i in usedata[part]) {
       newContent += `<li><div class="img"><img src="${usedata[part][i].photo}" alt=""></div>`;
-      newContent += `<div class="doctorInfo"><strong>${usedata[part][i].name}</strong>`;
+      newContent += `<div class="mountainInfo"><strong>${usedata[part][i].name}</strong>`;
       newContent += `<p>${usedata[part][i].place}</p>`;
       newContent += `<div>${usedata[part][i].address}</div></div></li>`;
     }

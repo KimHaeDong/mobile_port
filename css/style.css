@@ -99,6 +99,13 @@ ul, ol { list-style-type: none;}
     color: #fff;
 }
 
+
+
+#lnb .lnbLogoBox img {
+    display: inline-block;
+    margin: 30px 0px 10px 105px;
+}
+
 #lnb .inBtn {
     margin: 10px 20px;
 }
@@ -127,6 +134,21 @@ ul, ol { list-style-type: none;}
     margin-top: 100px;
 }
 
+#container i {
+    font-size: 30px;
+}
+
+#container h2 {
+    color: #fff;
+    font-size: 30px;
+    background-color: #1e6b96;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    /* width: 200px; */
+    text-align: center;
+}
+
 #content .topImg {
     background-image: url(/images/mountaineer.png);
     background-repeat: no-repeat;
@@ -137,6 +159,7 @@ ul, ol { list-style-type: none;}
     margin: 1%;
     /* border: 1px solid brown; */
 }
+
 
 
 
@@ -152,8 +175,178 @@ ul, ol { list-style-type: none;}
     margin: 1%;
 }
 
+#step_area .setArea i {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#step_area .setArea div {
+    color: #fff;
+    font-size: 30px;
+    float: right;
+    padding-top: 90px;
+    padding-right: 10px;
+}
+
+/* 게시판 */
+
+#notice-wrap li {
+    padding: 10px;
+}
+
+#notice-wrap li strong {
+    font-weight: bold;
+}
+
+.noticePage .topImg {
+    background: url(../images/coustomerTop.jpg) no-repeat;
+    background-size: cover;
+    height: 160px;
+}
+
+input {
+    border: 1px solid #ddd;
+}
+
+.noticePage {
+    padding: 130px 0px;
+}
+
+.comInt {
+    float: left;
+    width: 25%;
+
+    padding: 0 15px;
+    display: none;
+}
+
+.noticeBox {
+    width: 100%;
+}
+
+.noticePage h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 10px 30px 10px;
+}
+
+.noticeTable {
+    /* border: 1px solid #ddd; */
+    /* padding: 30px; */
+    float: none;
+    width: 100%;
+}
+
+.sbox {
+    text-align: center;
+}
+
+.sbox select {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.sbox input[type=text] {
+    height: 30px;
+    width: 300px;
+    text-indent: 1em;/*글씨 (1em만큼)들여쓰기*/
+    vertical-align: middle;
+}
+
+.sbox input[type=submit] {
+    height: 30px;
+    background: #ddd;
+    padding: 0 8px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
 
 
+/* .noticeTable td {
+    white-space: nowrap; 내용이 길어질경우 자동줄바꿈이 되지 않게
+    overflow: hidden;
+    text-overflow: ellipsis; 말줄임표
+} */
+
+.noticeTable{ margin-top: 20px;}
+
+.noticeTable col:nth-child(1) {
+    width: 5%;
+}
+.noticeTable col:nth-child(2) {
+    width: auto;
+}
+.noticeTable col:nth-child(3) {
+    width: 13%;
+}
+.noticeTable col:nth-child(4) {
+    width: 13%;
+}
+.noticeTable col:nth-child(5) {
+    width: 8%;
+}
+
+.noticeTable table {
+    border: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.noticeTable th,
+.noticeTable td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
+}
+
+.noticeTable tbody td:nth-child(1),
+.noticeTable tbody td:nth-child(3),
+.noticeTable tbody td:nth-child(4),
+.noticeTable tbody td:nth-child(5) {
+    text-align: center;
+}
+.noticeTable th {
+    /* background: #adcade; */
+    border-top: none;
+}
+.noticeTable tbody tr:hover {
+    background: #adcade;
+    color: #1e6b96;
+}
+
+/* 게시판 페이지번호 */
+
+#notice-wrap .numlist {
+    text-align: center;
+    /* margin: 30px; */
+    font-size: 16px;
+}
+#notice-wrap .numlist span {
+    background: #ddd;
+    /* padding: 5px 8px; */
+    margin-top: 10px;
+    display: inline-block;
+}
+#notice-wrap .numlist a {
+    display: inline-block;
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+}
+
+#notice-wrap .numlist a:hover {
+    background: #ddd;
+}
+
+#notice-wrap .numlist a.on {
+    background: #adcade;
+}
+
+#notice-wrap .sbox {
+    padding: 30px;
+}
+
+
+/* 푸터구역 */
 
 #footer {
     background: #333;
@@ -207,14 +400,17 @@ ul, ol { list-style-type: none;}
 }
 
 
-.mountainContent ul { display:flex;  
+.mountainContent ul { 
+    display:flex;  
     flex-wrap:wrap; /*자식들의 자동줄바꿈 허용*/
     padding:10px 5px;
     text-align: center; }
 .mountainContent ul li { background:#ddd; margin:5px; padding:10px;
-    border-radius:5px; flex:250px; }    
-.mountainContent ul li a { display:block }
-.mountainContent ul li img { width: 100%;}
+    border-radius:5px; flex:250px; }
+.mountainContent ul li a { display:block; }
+.mountainContent ul li img { 
+    width: 100%;
+}
 
 
 
