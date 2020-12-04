@@ -8,6 +8,9 @@ ul, ol { list-style-type: none;}
 .blind { position:absolute; width:0; height:0; 
     overflow:hidden; text-indent:-99999px; } */
 
+* {
+    font-family: 'Poor Story', cursive;
+}
 
 #wrap {
     max-width: 768px;
@@ -272,19 +275,19 @@ input {
 .noticeTable{ margin-top: 20px;}
 
 .noticeTable col:nth-child(1) {
-    width: 5%;
+    width: 10%;
 }
 .noticeTable col:nth-child(2) {
     width: auto;
 }
 .noticeTable col:nth-child(3) {
-    width: 13%;
+    width: 14%;
 }
 .noticeTable col:nth-child(4) {
     width: 13%;
 }
 .noticeTable col:nth-child(5) {
-    width: 8%;
+    width: 10%;
 }
 
 .noticeTable table {
@@ -412,38 +415,128 @@ input {
     width: 100%;
 }
 
+#step_area .main_noti { 
+    background: #1e6b96 url(../images/main_noti.png) no-repeat; 
+    color: red;
+    padding:0px 20px;
+    background-size:60px auto; 
+    height:50px;  
+    overflow:hidden;   
+}
+#step_area .main_noti a { padding-left:35px; 
+    display:block; height:50px; line-height:50px; font-weight: bold;}
 
+#step_area .main_noti a i {
+    padding-top: 5px;
+    color: red;
+}
 
-
-
-
-
-
-
-
-
-
-
+/* 로그인폼페이지 */
+#login_box form {
+    text-align: center;
+}
+#login_box p { margin:15px }
+#login_box label { display:inline-block; width:100px; height:30px;
+     vertical-align:middle; line-height:30px;
+}
+#login_box input { width:200px; height:30px; line-height:30px;
+     vertical-align:middle }
+#login_box button {
+    font-size: 20px;
+}
 
 /* 회원가입폼페이지 */
 fieldset { border:none; padding:20px }
 legend { display:none }
+#join_box form {
+    /* text-align: center; */
+}
 #join_box p { margin:15px }
 #join_box label { display:inline-block; width:100px; height:30px;
      vertical-align:middle; line-height:30px;
 }
 #join_box input { width:200px; height:30px; line-height:30px;
      vertical-align:middle }
+#join_box button {
+    text-align: center;
+}
 
 
 /* 모바일화면 */
-#onlyMobile {
+/* #onlyMobile {
     position:fixed; width:100vw; height:100vh; z-index:9999999999;
     background:#4ab8bc; top:0; font-size:30px; display:flex;
     justify-content: center; align-items:center;
-}
-@media screen and (max-width:768px ) {
+} */
+
+/* @media screen and (max-width:768px ) {
     #onlyMobile {
      display:none;
     }   
+} */
+
+@media screen and (min-width:768px ) {
+    #wrap {
+     display:none;
+    }   
+
+body {background:#f3efe8;}
+.loading {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  text-transform:uppercase;
+  
+  width:150px;
+  text-align:center;
+  line-height:50px;
+  
+  position:absolute;
+  left:0;right:0;top:50%;
+  margin:auto;
+  transform:translateY(-50%);
 }
+
+.loading span {
+  position:relative;
+  z-index:999;
+  color:#fff;
+}
+.loading:before {
+  content:'';
+  background:#61bdb6;
+  width:128px;
+  height:36px;
+  display:block;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  margin:auto;
+  
+  animation:2s loadingBefore infinite ease-in-out;
+}
+
+@keyframes loadingBefore {
+  0%   {transform:translateX(-14px);}
+  50%  {transform:translateX(14px);}
+  100% {transform:translateX(-14px);}
+}
+
+
+.loading:after {
+  content:'';
+  background:#ff3600;
+  width:14px;
+  height:60px;
+  display:block;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  margin:auto;
+  opacity:.5;
+  
+  animation:2s loadingAfter infinite ease-in-out;
+}
+
+@keyframes loadingAfter {
+  0%   {transform:translateX(-50px);}
+  50%  {transform:translateX(50px);}
+  100% {transform:translateX(-50px);}
+}}
+

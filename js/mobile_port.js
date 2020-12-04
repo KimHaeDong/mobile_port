@@ -45,6 +45,13 @@
     });
   });
 
+  $("body").on("click", ".inBtn a", function (e) {
+    e.preventDefault();
+    var url = this.href;
+    $("#container > #content").remove();
+    $("#container").load(url + " #content")
+  })
+  
   $("#topIcon .menu").on("click", function () {
     $("#navWrap").addClass("on");
     $("#lnb").animate(
@@ -65,6 +72,17 @@
       }
     );
   });
+
+  setInterval(kim, 3000)
+  function kim(){
+    $('#step_area .main_noti a:first-child').animate({
+      marginTop:'-50px'
+    }, 500, function(){
+      $(this).appendTo('#step_area .main_noti').css({
+        marginTop:'0px'
+      })
+    })
+  }
 
 })(jQuery);
 

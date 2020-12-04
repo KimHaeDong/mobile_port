@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -23,7 +25,7 @@
                         </div>
                         <div class="inBtn loginBtn"><a href="login.html">로그인</a></div>
                         <div class="inBtn joinBtn"><a href="join.html">회원가입</a></div>
-                        <div class="inBtn"><a href="logout.php">로그아웃</a></div>
+                        <div class="inBtn"><a href="index.html">로그아웃</a></div>
                         <div class="inBtn"><a href="#none">정보수정</a></div>
                         <ul class="menuBox">
                             <li><a href="mountainList.html" class="seoul">명산 100</a></li>
@@ -59,6 +61,12 @@
                         <div class="topImg">
                             <!-- <img src="/images/mountaineer.png" alt=""> -->
                         </div>
+                        <div class="main_noti">
+                            <a href="#"><i class="fas fa-exclamation-circle"></i> 강원 산간지역 폭설..대청봉 45㎝</a>
+                            <a href="#"><i class="fas fa-exclamation-circle"></i> 설악산 대청봉 구간 등산로 5곳 폭설로 통제</a>
+                            <a href="#"><i class="fas fa-exclamation-circle"></i> 폭설로 폐쇄한 설악산 대피소 개방…비선대만 통행 가능</a>
+                            <a href="#"><i class="fas fa-exclamation-circle"></i> 설악산국립공원, 폭설로 탐방로 부분통제</a>
+                    </div>
                         <div class="setArea">
                             <a href="mountainList.html" class="btn1">
                                 <i class="fas fa-mountain"></i><div class="">명산 100</div>
@@ -100,9 +108,9 @@
     </div>
     </div>
 
-    <div id="onlyMobile">
-        이 사이트는 모바일에서만 보입니다.
-    </div>
+    <div class="loading">
+        <span>Loading</span>
+      </div>
 
     <script src="js/mobile_port.js"></script>
 </body>
